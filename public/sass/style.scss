@@ -1,0 +1,10 @@
+@font-face {
+    font-family: Prometo;
+    src: url('../font/Prometo.eot');
+    src: url('../font/Prometo.ttf');
+    src: url('../font/Prometo.woff');
+}
+
+@import "./variables/colors.scss";
+@import "./components/allcomponents.scss";
+@import "./pages/global.scss";

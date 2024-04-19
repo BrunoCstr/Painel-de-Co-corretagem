@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icone-azul.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Dados da Unidade</title>
+</head>
+
+<body class="page-2">
+    <nav>
+        <div class="navigation">
+            <img id="logo-home" src="images/RSup-02.webp" onclick="home()">
+            <div class="links">
+                <a id="insurance" href="insurance-grid.html">Seguradoras</a>
+                <a id="settings" href="settings.html">Configurações</a>
+                <button id="logout-button" onclick="logout()">Sair</button>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="container-home">
+            <img id="back2" src="./images/botao-voltar.png" onclick="back()">
+            <div class="main-container">
+                <div class="content">
+                    <h1 style="text-align: center;">Dados da Unidade</h1>
+                    <div class="msgError"></div>
+                    <div class="msgSuccess"></div>
+                    <br>
+                    <label id="labelName" for="inputNameInsurance">Nome da Seguradora:</label>
+                    <input id="inputNameInsurance" type="text"></input>
+                    <br>
+                    <br>
+                    <label id="labelUnit" for="inputUnit">Nome da Unidade:</label>
+                    <input id="inputUnit" type="text">
+                    <br>
+                    <br>
+                    <label id="labelStatus" for="inputStatus">Status da unidade:</label>
+                    <input id="inputStatus" type="text">
+                    <br>
+                    <br>
+                    <label for="color">Escolha a cor do status da unidade:</label>
+                    <select name="color" id="color">
+                        <option></option>
+                        <option value="#14FF00">Verde</option>
+                        <option value="#FF0000">Vermelho</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label id="labelEmailUnit" for="inputEmailUnit">E-mail:</label>
+                    <input id="inputEmailUnit" type="text">
+                    <br>
+                    <br>
+                    <label id="labelPasswordUnit" for="inputPasswordUnit">Senha:</label>
+                    <input id="inputPasswordUnit" type="password">
+                    <br>
+                    <br>
+                    <button id="submit-unit" type="button" onclick="submitUnit()">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.6/vivus.min.js"
+        integrity="sha512-oUUeA7VTcWBqUJD/VYCBB4VeIE0g1pg5aRMiSUOMGnNNeCLRS39OlkcyyeJ0hYx2h3zxmIWhyKiUXKkfZ5Wryg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore-compat.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-auth-compat.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-storage-compat.js" defer></script>
+    <script src="js/register-unit.js" defer></script>
+</body>
+</html>

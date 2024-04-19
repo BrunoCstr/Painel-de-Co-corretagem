@@ -1,0 +1,114 @@
+.container-register {
+    color: $gray-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 95%;
+    border-radius: 25px;
+    border: solid 2px;
+    border-color: #9b9b9b;
+    margin-top: 15px;
+
+    backdrop-filter: blur(15px);
+}
+
+.content2 {
+    margin: 50px;
+    margin-top: 8%;
+    margin-left: -20px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.tittle-register {
+    font-size: 29px;
+}
+
+#inputEmail,
+#inputPassword,
+#inputName,
+#inputConfirmPassword {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #9b9b9b;
+    outline: none;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    font-size: 15px;
+}
+
+#inputEmail2,
+#inputPassword2,
+#inputName2,
+#inputConfirmPassword2 {
+    width: 175%;
+    border: 0;
+    border-bottom: 2px solid #9b9b9b;
+    outline: none;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    font-size: 15px;
+}
+
+#eyePassword1 {
+    position: absolute;
+    top: 94%;
+    right: -65%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#eyePassword2 {
+    position: absolute;
+    top: 66%;
+    right: -65%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+// Responsividade
+
+@media screen and (max-width: 428px) {
+    .container-register {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .container-register {
+        width: 360px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .container-register {
+        width: 340px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container-register {
+        width: 300px;
+        height: 440px;
+    }
+
+    #inputEmail,
+    #inputPassword,
+    #inputName,
+    #inputConfirmPassword {
+        font-size: 12px;
+    }
+
+    #btn-register {
+        padding: 11px;
+        font-size: 12px;
+        margin-top: 380px;
+        position: absolute;
+    }
+}
+
+@media (max-height: 610px) {}

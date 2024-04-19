@@ -1,0 +1,39 @@
+// Botões
+
+@mixin std-btn {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50px;
+    color: white;
+    padding: 12px 35px;
+    font-size: 15px;
+    font-family: Prometo, sans-serif;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+}
+
+@mixin std-btn-nav {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50px;
+    color: white;
+    padding: 12px 35px;
+    font-size: 15px;
+    font-family: Prometo, sans-serif;
+    cursor: pointer;
+    text-align: center;
+}
+
+@mixin btn2 {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-family: Prometo, sans-serif;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+}
